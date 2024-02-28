@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning</title>
+    <link rel="stylesheet" href="1-index.css">
+    <!-- internal CSS  -->
+    <!-- 
+    <style>
+        p{
+            background-color: aqua;
+            color: black;
+        }
+        h2{
+            background-color: bisque;
+            color: black;
+        }
+    </style> 
+    -->
+</head>
+<body>
+    <!-- inline css -->
+    <h1 style="background-color: aquamarine; color: black;"> Welcome From Bangladesh </h1>
+
+    <!-- Internal CSS from Head Style -->
+    <!-- External CSS from index.css-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur in voluptatum reiciendis aperiam explicabo assumenda sit necessitatibus facilis, totam dolores!</p>
+    <h2>Lets explore Bangldesh</h2>
+
+    <!-- for nested element selector -->
+    <ul>
+        <li><a href="google.com">google</a></li>
+    </ul>
+    <div> <a href="facebook.com">facebook</a> </div>
+
+    <!-- id selector -->
+    <section id="sec1">
+        <h1>Section 1</h1>
+        <p>I am at section 1 and many thing</p>
+    </section>
+    <section id="sec2">
+        <h1>Section 2</h1>
+        <p>I am at section 2 and many thing</p>
+    </section>
+
+    <!-- class selector -->
+    <button class="mybutton">button1</button>
+    <button>button2</button>
+    <button class="mybutton">button3</button>
+
+    <div>
+        <button class="mybutton">button4</button>
+    </div>
+
+    <!-- attribute selector -->
+    <input type="text">
+    <input type="email"> <br>
+
+    <!-- pseudo class selector -->
+    <a href="https://www.google.com/"> GOOGLE </a>
+    <a href="https://twitter.com/"> TWITTER </a> <br>
+
+    <ul>
+        <li>I am no one 1</li>
+        <li>I am no one 2</li>
+        <li>I am no one 3</li>
+        <li>I am no one 4</li>
+        <li>I am no one 5</li>
+    </ul>
+
+    <div id="div_hover"> Hover Over Me
+        <p> Who The Hell Are You? </p>
+    </div> <br> <br>
+
+    <button id="me_button"> Click Me </button>
+    <input type="password"></input>
+
+    <p id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, laboriosam.</p>
+
+    <!-- descendant, child, adjacent, general sibling selectors -->
+
+    <div id="div1">
+        <p>Paragraph 1</p>
+        <div id="div2">
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+        </div>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+    </div>
+
+</body>
+</html>

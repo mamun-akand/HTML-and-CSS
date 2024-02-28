@@ -1,3 +1,6 @@
+# HTML6
+HTML5 is the fifth and current version of HTML. It has improved the markup available for documents and has introduced application programming interfaces(API) and Document Object Model(DOM). It has introduced various new features like drag and drop, geo-location services
+
 # HTML Course and Project
 pair tag/Container Tag  : <h1> text </h1>
 Empty Tag               : <br>
@@ -14,7 +17,7 @@ meta                    : for SEO
 
 ## List, Link, Images, Frames, Media
 - List
-    - Ordered List <ol type="i"> <li>Trainee Software Engineer</li> </ol>
+    - Ordered List <ol type="1" start="5"> <li>Trainee Software Engineer</li> </ol> // start=5 dile 5 theke shuru hobe
     - Unordered List <ul> <li>Trainee Software Engineer</li> </ul>
     - Description List <dl> <dt>Trainee Software Engineer</dt> <dd> Here description </dd> </dl>
 - Link
@@ -67,9 +70,6 @@ meta                    : for SEO
 - link describable
 - Form label (for, id, name should be the same)
 - Role and Aria-Label
-    - Role
-        <div role="button">click me</div>   <!--Now div explicitly works as button-->
-        <button>click me</button>
     - Aria-Label 
         <button type="submit" aria-label="Send me a good message"> Send message</button>        <!--aria label: screen reader will read aria-label text over the button message with priority-->
 

@@ -1,0 +1,125 @@
+h2{
+    background-color: bisque;
+    color: black;
+}
+
+/* nested element selector */
+ul li a{
+    color: blueviolet ;
+    color: brown;           /* this would override and it will finally stay */
+}
+div a{
+    color: blue;
+}
+
+/* universal selector: all the element will be this color universally */
+/*
+* {
+     color: aqua;     
+} 
+*/
+
+/* id selector */
+#sec1 {
+    background-color:green;
+    color:white ;
+}
+#sec2 {
+    background-color:green;
+    color:white ;
+}
+
+/* class selector */
+.mybutton {
+    background-color:yellow;
+}
+
+/* attribute selector */
+input[type="email"]{
+    background-color:aqua ;
+}
+
+/* pseudo class selector */
+a {              /* for link */      
+    color:black;
+}
+a:hover {                   /* mouse hover over */      
+    color:green;        
+    font-size: 1.1em;
+}
+a:active {                  /* click kore dhore rakhle or clicking time  */
+    color: red;
+}
+a:visited {                  /* if visited  */
+    color: grey;
+}
+
+li{             /* for list */
+    color: black;
+}
+li:hover{
+    background-color: burlywood;
+    color:white;
+}
+li:not(hover){
+    background-color:rgb(243, 239, 239);
+}
+li:nth-child(odd){
+    background-color:rgb(212, 242, 216);
+}
+
+#div_hover p{       /* Hover Over Vanish*/
+    background-color: rgb(198, 231, 246);
+    color:red;
+    display: none;
+}
+#div_hover:hover p{
+    background-color: rgb(198, 231, 246);
+    color:red;
+    padding: 10px;
+    display: block;
+}
+
+button {        /* for button */
+    color:black;
+    background-color:burlywood;
+}
+button:hover {                   /* mouse hover over */      
+    color:white; 
+    background-color: green;      
+}
+button:active {                  /* click kore dhore rakhle or clicking time  */
+    color: white;
+    background-color: red;
+}
+
+input[type="password"]:focus{        /* focus or cursorr rakhle/click korle color change hobe */  
+    background-color: rgb(201, 209, 209);
+}
+
+/* Pseudo Element Selector  */
+#lorem::first-letter{
+    color:red;
+}
+#lorem::after{
+    content: ">";
+    color:red;
+}
+/* child */
+/* 
+#div1 > p{      
+    color:red;
+} 
+*/
+
+/* adjacent */
+/* #div2 + p{    
+    color:red;
+} */
+
+/* General Sibling */
+#div2 ~ p{    
+    color:red;
+}
+
+

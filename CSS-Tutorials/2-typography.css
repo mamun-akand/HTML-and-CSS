@@ -1,0 +1,103 @@
+/* text formatting */
+#bangladesh{
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    /* uppercase, lowercase */
+    text-transform: capitalize;    
+    text-decoration: underline; 
+    /* shadow  */
+    text-shadow: 0.1rem 0.15rem grey;
+    /* spacing or tabs  */
+    /* text-indent:5rem;        */
+    letter-spacing: 0.5rem;
+}  
+#lorem {
+    font-size: 1.2rem;         /* 1rem = 16px = 100% */      
+    font-weight: 500;
+    font-style: italic;
+    /* turn on google font to work  */
+    font-family: "Pacifico", cursive;       
+    color: rgba(148, 212, 148, 1);          /* a : how bright and dense the color would be  */
+}
+
+/* icon size, color  */
+.MyIconForCSS{
+    color:purple;
+    font-size: 100px ;
+}
+
+/* box model  */
+#box-model{
+    background-color: bisque;
+    /* To fix the box width, other padding, border, margin will be inside this   */
+    box-sizing: border-box; 
+    width: 400px;
+    /* space around text */
+    padding: 10px; 
+    /* border */
+    border: 2px dotted black;
+    /* gap around the whole content  */
+    margin: 20px;  
+    /* For padding,border,margin up-right-down-left works clockwise;  */
+}
+
+/* inline, block, inline-block */
+#blocktest{
+    display: inline-block;               /* inline dile block ta inline e convert hobe, ar inline-block dile block ta upore kete jabe na*/
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    color:antiquewhite;
+}
+#click{
+    display: block;                 /* inline ta block e convert hobe  */             
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+    color:antiquewhite;
+}
+
+/* width and max-width */
+#para1{
+    background-color:aqua;
+    /* width: 500px; */
+    max-width: 550px;    /* responsive now. screen left-rigt choto korle, lekha break hobe na */
+}
+#para2{
+    background-color:aquamarine;
+    max-width: 100%;    /* responsive now. screen left-rigt choto korle, lekha break hobe na */
+    height: 150px;      /* to increase height of writing box */
+}
+
+/* Opacity and Overflow */
+#skypeOpacity{
+    font-size: 150px;
+    color:#00aff0;
+    opacity: 0.5;           /* 0 to 1 */
+}
+#skypeOpacity:hover{
+    font-size: 150px;
+    color:#00aff0;
+    opacity: 1;           /* 0 to 1 */
+}
+/* overflow  */
+#LoremOverflow{
+    background-color:#e083f4;
+    width: 400px;
+    height: 300px;
+    overflow:scroll;          /* lekha overflow hole scroll bar ashbe  */
+}
+
+/* background */
+footer{
+    color: white;
+    background-image: url(./image.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;       /* to repeat in x axis and y axis, but here no  */
+    background-position: center;   
+    background-attachment: fixed;       /* image ta move korbe na, fixed thakbe  */
+    background-size: cover;             /* to get full image to show */
+}
+
+
+
