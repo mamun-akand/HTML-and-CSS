@@ -1,0 +1,348 @@
+* {                         /* For Responsive  */                       
+    box-sizing: border-box;
+}
+
+/* nav  */
+nav{
+    position: fixed;
+    z-index: 1;     /* kono element er niche chole gele, upore uthe ashbe  */
+    background-color: rgb(27, 87, 216);
+    color: white;
+    width: 100%;
+    height: 5vh;
+    top: 0px;
+}
+.nav_div {
+    color: white;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+}
+
+.nav_text {
+    color: white;
+    text-decoration: none;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    /* transition  */
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    /* transform  */
+    display: inline-block;
+}
+
+.nav_text:hover {
+    color: red; 
+    text-decoration: underline;
+
+    /* transform */
+    transform: scale(1.5);          /* transform korte hole, oi element obosshoi display: inline-block/block dite hobe */      
+}
+
+/* variable */
+:root{
+    --myTextColor : rgb(244, 245, 245);    /* variable declare */
+}
+#para1{
+    color: var(--myTextColor);               /* using variable */
+    background-color:rgb(67, 155, 108);
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+#para2{
+    color: var(--myTextColor);
+    background-color:rgb(137, 141, 16);
+    padding: 10px;
+}
+
+/* filter  */
+#image1{
+    filter:saturate(30%);
+    color: var(--myTextColor);
+    min-height: 50vh;
+    min-width: 50vh;
+    background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+#image1:hover{
+    filter:saturate(100%);
+    color: var(--myTextColor);
+    min-height: 50vh;
+    min-width: 50vh;
+    background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+
+/* <!-- Card Design, Box Shadow and float --> */
+#skillTitle{
+    color: var(--myTextColor);
+    text-align: center;
+    padding: 20px;
+}
+#skill{
+    min-height: 500px;
+    background-color: rgb(77, 75, 75);
+}
+.card{
+    background-color: bisque;
+    width: 25%;
+    padding: 20px;
+    margin: 25px;
+    box-shadow: 6px 6px rgb(171, 204, 237);
+    float: left;                                        /* will go left of parent section  */
+    transition: all 0.4s;
+}
+.card:hover{
+    box-shadow: 6px 6px 0.2rem rgb(208, 205, 205);    /* x-axis, y-axis, blur, color  */
+    background-color: aqua;
+    /* transform: scale(1.2);                              to make bigger with scalling  */
+    /* transform: rotate(25deg);                              to rotate */
+    /* transform: skew(25deg); */
+    transform: translate(25px, 35px);                   /* translatee(x,y): it changes its postion  */
+}
+#row::after{            /* clear float, otherwise nicher lekha upore ba sathe chole ashbe  */       
+    content: "";
+    clear:both;
+    display: table;
+}
+
+#row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout  */
+
+/* Positioning */
+.parent {
+    background-color: aquamarine;
+    Height: 400px;
+}
+.child {
+    background-color: black;
+    color: var(--myTextColor);
+    width: 100px;
+    position:relative;      /* relative: parent onujayi, fixed: screen viewport onujayi fixed screen norbe, absoulte: not fixed  */ 
+    top: 50%;
+    left: 50%;
+}
+
+/* <!-- Flex  --> */
+#flexTitle{
+    text-align: center;
+}
+.parent_flex{               /* flex always work on parent */
+    background-color: rgb(96, 14, 14);
+    height: 60vh;
+    min-width: 100%;
+    display: flex;
+    gap: 1rem;
+    /* flex-direction: column; */
+    justify-content:space-evenly;          /* center, end, start etc  */
+    align-items: center;                   /* if justify x-axis, then align y-axis. if justify y, align x.   */
+}
+
+.child_flex {        /* flex always work on parent */
+    background-color: rgb(246, 217, 74);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;     /* for circle  */
+    transition-property: background-color color;    /* background and text will be transitedd. Characteristic from hover */
+    transition-duration: 0.5s;
+    /* transition-delay: 1s;  */
+    transition-timing-function: linear;             /* smooth at beginning and end  */
+}
+.child_flex:hover {
+    background-color: rgb(114, 242, 168);
+    color: black;
+}
+
+.item3{     /* Flex item */
+    align-self: flex-end;
+    /* justify-self: ; */
+}
+
+
+/* Grid  */
+/* <!-- team members starts --> */
+.member_title{
+    width: 100%;
+    text-align: center;
+}
+
+.team_members{
+    background-color: purple;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.members{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.member{
+    width: 80%;
+    background-color: orange;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Grid items  */
+#member2{
+    background-color: green;
+    /* grid-column: 2 / span 3;        to take 3 cells for 2, from 2 */
+}
+/* <!-- team members ends --> */
+
+
+
+/* responsive  starts*/
+
+@media screen and (max-width: 992px) {
+    #skill{
+        background-color: red;
+    }
+    .members{
+        /* background-color: yellow; */
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #skill{
+        background-color: green;
+    }
+    #row{
+        flex-direction: column;
+    }
+    .card{
+        min-width: 80%;
+    }
+    .members{
+        /* background-color: red; */
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #image1 {              /* image thakbe na */
+        display: none; 
+    }
+    #skill{
+        background-color: blue;
+    }
+    .card{
+        min-width: 80%;
+    }
+    .parent_flex{ 
+        flex-direction: column;
+    }
+    .child_flex{
+        text-align: center;
+    }
+    .members{
+        grid-template-columns: 100%;
+        width: 50%;
+        margin: 20px;
+    }
+}
+/* responsive  ends */
+
+/* <!-- Animation Section Starts here  --> */
+.parent_circle{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child_circle{
+    background-color: brown;
+    color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* animation  */
+    animation-name: my_circle;
+    animation-duration: 5s;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;   
+    position: relative;
+}
+
+@keyframes my_circle{       /* animation function works */
+    
+    0%{
+        background-color: rgb(88, 237, 93);
+        top: 0px;   /* parent position must be relative to work */
+        left: 0px;
+    }
+    25%{
+        background-color: rgb(234, 11, 11);
+        top: 100px;
+        left: 0px;
+    }
+    50%{
+        background-color: rgb(8, 128, 8);
+        top: 0px;
+        left: 0px;
+    }
+    75%{
+        background-color: rgb(226, 211, 43);
+        top: -100px;
+        left: 0px;
+    }
+    100%{
+        background-color: rgb(48, 11, 232);
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/* <!-- Animation Section Ends here  --> */
+
+
+/* footer */
+footer{
+    background-color: darkblue;
+    text-align: center;
+    color: var(--myTextColor);
+}
+
+
+
+
+
+
+
+

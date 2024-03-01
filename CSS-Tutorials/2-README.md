@@ -60,8 +60,8 @@
     - width and max-width, height
             #para2{
                 background-color:aquamarine;
-                max-width: 100%;    /* responsive now. screen left-rigt choto korle, lekha break hobe na */
-                height: 150px;      /* to increase height of writing box */
+                max-width: 100%;    <!-- /* responsive now. screen left-rigt choto korle, lekha break hobe na */ -->
+                height: 150px;      <!-- /* to increase height of writing box */ -->
             }
 
     - Opacity and Overflow
@@ -78,7 +78,7 @@
                 height: 300px;
                 overflow:scroll;          <!-- lekha overflow hole scroll bar ashbe -->
             }
-    - background
+    - background ( image )
             footer{
                 color: white;
                 background-image: url(./image.jpg);

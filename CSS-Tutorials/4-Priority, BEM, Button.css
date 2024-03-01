@@ -1,0 +1,20 @@
+
+/* <!-- priority -->   */
+h1{
+    background-color: brown;
+}
+#ID_Line{
+    background-color: rgb(79, 226, 68);
+}
+.Class_Line{
+    background-color: aqua;
+}
+
+/* button  */
+.btn{
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor:pointer;
+}
