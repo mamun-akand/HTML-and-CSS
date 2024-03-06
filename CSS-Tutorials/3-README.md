@@ -211,7 +211,17 @@
                         left: 0px;
                     }
                 }
-        
+
+   ## Later Learn
+.products-item{
+    position: relative;        /* parent postion relative */ 
+}
+.badge{
+    position: absolute;        /* child postion absolute */
+    z-index: 1;
+    top: 0;                    /* to take top left corner */
+    left: 0; 
+}
 
 
 

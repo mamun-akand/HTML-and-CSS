@@ -84,7 +84,8 @@
                 background-image: url(./image.jpg);
                 height: 100vh;
                 background-repeat: no-repeat;       <!-- to repeat in x axis and y axis, but here no -->
-                background-position: center;   
+                background-position: center;
+                <!-- background-position: 100%;     for banner responsive-->
                 background-attachment: fixed;       <!--image ta move korbe na, fixed thakbe-->
                 background-size: cover;             <!--to get full image to show-->
             }
