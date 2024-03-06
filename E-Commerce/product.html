@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <!-- font awesome cdn starts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn  ends -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <i class="fa-solid fa-bars" id="menu__bar"></i>
+
+    <nav id="nav__bar" class="hidden">
+        <div class="nav-upper">
+            <ul class="nav-upper-list my-flexx">
+                <li class="upper__list"><a href="index.html"> Home </a></li>
+                <li class="upper__list"><a href="register.html"> Register </a></li>
+                <li class="upper__list"><a href="login.html"> Login </a></li>
+                <li class="upper__list"><a href="index.html"> Logout </a></li>
+                <li class="upper__list"><a href="contact.html"> Contact </a></li>
+                <li>
+                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-lower my-flexx">
+            <ul class="nav-lower-list my-flexx">
+                <li><a href="index.html" class="lower__list1"> BuyExpress </a></li>
+                <li >
+                    <span>
+                        <a href="cart.html" class="lower__list2"> 
+                            <span class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart    </span>
+                            <span class="spent"> <i class="fab fa-dollar-sign"></i> Spent : 1091.00 </span>
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- script for javascript  starts-->
+    <script src="./index.js"></script>
+    <!-- script for javascript ends  -->
+
+    <!-- <main> -->
+    <main class="product-main">
+        <section class="product-section">
+            <div class="product-left">
+                <img class="product-left-image" src="./resources/product (4).jpg" alt="">
+            </div>
+            <div class="product-right my-flexx">
+                    <h2 class="product-right-title">Watch</h2>
+                    <div class="product-right-description">
+                        <strong>Description: </strong>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem molestiae iusto labore deleniti vel eius praesentium obcaecati quam nostrum illo itaque quaerat ipsam voluptas, veniam corporis blanditiis at ut rem qui impedit, similique debitis. Nemo, ipsa! Ab numquam, unde consequatur soluta excepturi aperiam mollitia tempore ducimus ad debitis quia enim quod incidunt nemo, fugiat consequuntur reiciendis quam libero voluptates quae amet doloremque nesciunt facere? Eum autem esse sint neque provident suscipit aspernatur quas dicta minima doloribus corrupti, aliquam, optio numquam atque temporibus? Fugiat, in illo id pariatur, reiciendis, quisquam esse sit voluptatum velit nihil veritatis corrupti tempore error dolor.
+                    </div>
+                    <h2 class="product-right-price my flex">$100.50</h2>
+                    <ul class="stars my-flexx">
+                        <li class="checked"> <i class="fa-solid fa-star"></i> </li>  <!-- checked  -->
+                        <li class="checked"> <i class="fa-solid fa-star"></i> </li>  <!-- checked  -->
+                        <li class="checked"> <i class="fa-solid fa-star"></i> </li>  <!-- checked  -->
+                        <li class="unchecked"> <i class="fa-solid fa-star"></i> </li>  <!-- unchecked  -->
+                        <li class="unchecked"> <i class="fa-solid fa-star"></i> </li>  <!-- unchecked  -->
+                    </ul>
+                    <button class="btn product-right-btn">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <!-- </main> -->
+
+    <footer class="my-flexx">
+        <div class="my-flexx">
+            <label for="subscribe">Subscribe to Newsletter: </label>
+            <input type="email" id="subscribe" class="footer_input" placeholder="Enter E-mail">
+            <button class="btn btn-subscribe">SUBSCRIBE</button>
+        </div>
+        <div>
+            <span> &copy;Copyright 2024. BuyExpress: All rights reserved</span>
+        </div>
+    </footer>
+
+</body>
+</html>
