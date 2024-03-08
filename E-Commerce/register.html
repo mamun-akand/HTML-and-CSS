@@ -13,30 +13,35 @@
 
     <i class="fa-solid fa-bars" id="menu__bar"></i>
 
-    <nav id="nav__bar" class="hidden">
-        <div class="nav-upper">
-            <ul class="nav-upper-list my-flexx">
+    <nav id="nav__bar" class="hidden my-flexx">
+        <div class="nav-upper my-flexx">
+            <div class="brand">
+                <a href="index.html" class="lower__list1"> BuyExpress </a>
+            </div>
+            <ul class="nav-upper-list">
                 <li class="upper__list"><a href="index.html"> Home </a></li>
                 <li class="upper__list"><a href="register.html"> Register </a></li>
                 <li class="upper__list"><a href="login.html"> Login </a></li>
                 <li class="upper__list"><a href="index.html"> Logout </a></li>
                 <li class="upper__list"><a href="contact.html"> Contact </a></li>
-                <li>
-                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
-                </li>
             </ul>
+            <div class="cart-and-profile my-flexx">
+                <span class="cart-total">
+                    <a href="cart.html" class="lower__list2 cart-profile-gap my-flexx"> 
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="spent">$1091</span>
+                    </a>
+                </span>
+                <div class="nav-upper-profile">
+                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
+                </div>
+            </div>
         </div>
-
         <div class="nav-lower my-flexx">
             <ul class="nav-lower-list my-flexx">
                 <li><a href="index.html" class="lower__list1"> BuyExpress </a></li>
                 <li >
-                    <span>
-                        <a href="cart.html" class="lower__list2"> 
-                            <span class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart    </span>
-                            <span class="spent"> <i class="fab fa-dollar-sign"></i> Spent : 1091.00 </span>
-                        </a>
-                    </span>
+                    
                 </li>
             </ul>
         </div>
@@ -46,12 +51,162 @@
     <script src="./index.js"></script>
     <!-- script for javascript ends  -->
 
-    <main>
-        <h2>I am the REGISTRATION page</h2>
+    <main class="register-main my-flexx-column">              <!-- product-section: same as product.html  -->
+        <section class="user-profile my-flexx-column">       <!-- product-section: same as product.html  -->
+            <article class="registration-card card-col my-flexx-column">
+                <div class="reg-top my-flexx-column">
+                    <h2 class="registration-title">Register a new account</h2>
+                    <p class="quick-easy">It's quick and easy</p>
+                </div>
+                
+                <section class="reg-fill-up">
+                    <div class="fill-div reg-name">
+                        <label for="first-name">
+                            <input class="name input-first-name input-text-field box-padding" autofocus id="first-name" type="text" placeholder="First Name">
+                        </label>
+                        <label for="sur-name">
+                            <input class="name input-surname input-text-field box-padding" id="sur-name" type="text" placeholder="Surname">
+                        </label>
+                    </div>
+
+                    <div class="fill-div reg-mobile-email">
+                        <label for="enter-email">
+                            <input class="common-mobile-password input-mobile-email input-text-field box-padding" id="enter-email" type="text" placeholder="Mobile number or email address">
+                        </label>
+                    </div>
+                    <div class="fill-div reg-password">
+                        <label for="enter-password">
+                            <input class="common-mobile-password input-password input-text-field box-padding" id="enter-password" type="password" placeholder="New password">
+                        </label>
+                    </div>
+                    
+                    <!-- dob starts -->
+                    <div class="fill-div dob-full">
+                        <div class="dob-question">
+                            <p class="dob-text txt-size">
+                                Date of Birth <i class="fa-solid fa-circle-question"></i>
+                            </p>
+                        </div>
+                        
+                        <div class="dob-main">
+                            <select name="day" id="dob-day" class="text-align-center box-padding-dob btn">
+                                <option value="Day">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="month" id="dob-month" class="text-align-center btn box-padding-dob">
+                                <option value="Month">Month</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="year" id="dob-year" class="text-align-center btn box-padding-dob">
+                                <option value="Year">Year</option>
+                                <option value="2000">2000</option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                                <option value="2004">2004</option>
+                                <option value="2005">2005</option>
+                                <option value="2006">2006</option>
+                                <option value="2007">2007</option>
+                                <option value="2008">2008</option>
+                                <option value="2009">2009</option>
+                                <option value="2010">2010</option>
+                                <option value="2011">2011</option>
+                                <option value=".......">.......</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- dob ends  -->
+
+                    <!-- gender starts -->
+                    <div class="fill-div gender-full">
+                        <div class="gender-question">
+                            <p class="gender-text txt-size">
+                                Gender <i class="fa-solid fa-circle-question"></i>
+                            </p>
+                        </div>
+                        <div class="gender-down">
+                            <div class="gender-space box-padding-gender">
+                                <!-- <label for="gender-female"> Female <input id="gender-female" type="radio"> </label> -->
+                                <span class="gender-down-female">Female</span> 
+                                <input name="my-gender" id="gender-female" type="radio">
+                            </div>
+                            <div class="gender-space box-padding-gender">
+                                <!-- <label for="gender-female"> Female <input id="gender-female" type="radio"> </label> -->
+                                <span class="gender-down-male">Male</span> 
+                                <input name="my-gender" id="gender-male" type="radio">
+                            </div>
+                            <div class="gender-space box-padding-gender">
+                                <!-- <label for="gender-female"> Female <input id="gender-female" type="radio"> </label> -->
+                                <span class="gender-down-others">Others</span> 
+                                <input name="my-gender" id="gender-others" type="radio">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- gender ends -->
+                </section>
+
+                <div class="text-about-signup txt-size">
+                    <p class="sign-down-text">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. Click sign up, if you are agree. </p>
+                </div>
+
+                <div class="sign-up">
+                    <a href="./index.html"><button class="signup-btn btn" type="submit"><h3>Sign up</h3></button></a>
+                </div>
+
+                <div class="already-account">
+                    <a class="my-account" href="./login.html">Already have an account?</a>
+                </div>
+
+            </article>
+        </section>
     </main>
 
     <footer class="my-flexx">
-        <div class="my-flexx>
+        <div class="my-flexx">
             <label for="subscribe">Subscribe to Newsletter: </label>
             <input type="email" id="subscribe" class="footer_input" placeholder="Enter E-mail">
             <button class="btn btn-subscribe">SUBSCRIBE</button>

@@ -13,30 +13,35 @@
 
     <i class="fa-solid fa-bars" id="menu__bar"></i>
 
-    <nav id="nav__bar" class="hidden">
-        <div class="nav-upper">
-            <ul class="nav-upper-list my-flexx">
+    <nav id="nav__bar" class="hidden my-flexx">
+        <div class="nav-upper my-flexx">
+            <div class="brand">
+                <a href="index.html" class="lower__list1"> BuyExpress </a>
+            </div>
+            <ul class="nav-upper-list">
                 <li class="upper__list"><a href="index.html"> Home </a></li>
                 <li class="upper__list"><a href="register.html"> Register </a></li>
                 <li class="upper__list"><a href="login.html"> Login </a></li>
                 <li class="upper__list"><a href="index.html"> Logout </a></li>
                 <li class="upper__list"><a href="contact.html"> Contact </a></li>
-                <li>
-                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
-                </li>
             </ul>
+            <div class="cart-and-profile my-flexx">
+                <span class="cart-total">
+                    <a href="cart.html" class="lower__list2 cart-profile-gap my-flexx"> 
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="spent">$1091</span>
+                    </a>
+                </span>
+                <div class="nav-upper-profile">
+                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
+                </div>
+            </div>
         </div>
-
         <div class="nav-lower my-flexx">
             <ul class="nav-lower-list my-flexx">
                 <li><a href="index.html" class="lower__list1"> BuyExpress </a></li>
                 <li >
-                    <span>
-                        <a href="cart.html" class="lower__list2"> 
-                            <span class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart    </span>
-                            <span class="spent"> <i class="fab fa-dollar-sign"></i> Spent : 1091.00 </span>
-                        </a>
-                    </span>
+                    
                 </li>
             </ul>
         </div>
@@ -46,12 +51,29 @@
     <script src="./index.js"></script>
     <!-- script for javascript ends  -->
 
-    <main>
-        <h2>I am the PROFILE page</h2>
+    <main class="profile-main my-flexx-column">                                              <!-- product-section: same as product.html  -->
+        <section class="user-profile my-flexx-column">       <!-- product-section: same as product.html  -->
+            <div><h2 class="user-profile-title">User Profile</h2></div>
+            <article class="profile-card card-col my-flexx-column">
+                <div class="profile-image">
+                    <a href="./profile.html"><img class="profile-section-img" src="./resources/Profile.jpg" alt="Profile Picture"></a>
+                </div>
+                <div class="name my-flexx"><h2 class="name-text">Md. Abdullah Al Mamun</h2></div>    
+                <div class="email">mamun.crick25@gmail.com</div>    
+                <div class="user-desc">User Id: 2125051030</div>    
+                <div class="user-desc">Earned Point: 430pnt</div>    
+                <div class="user-desc">Gift Voucher: 1500tk</div>    
+                <div class="profile-desc">Gadget and Technology Enthusiast. Interested in gadget shoppinng. Keeps eye on newer technologies.</div>
+                <div class="profile-icon">
+                    <span class="icon-down"><i class="far fa-edit"></i></span>
+                    <a href="./index.html"><span class="icon-down"><i class="fa-regular fa-trash-can"></i></span></a>
+                </div>   
+            </article>
+        </section>
     </main>
 
     <footer class="my-flexx">
-        <div class="my-flexx>
+        <div class="my-flexx">
             <label for="subscribe">Subscribe to Newsletter: </label>
             <input type="email" id="subscribe" class="footer_input" placeholder="Enter E-mail">
             <button class="btn btn-subscribe">SUBSCRIBE</button>

@@ -13,30 +13,35 @@
 
     <i class="fa-solid fa-bars" id="menu__bar"></i>
 
-    <nav id="nav__bar" class="hidden">
-        <div class="nav-upper">
-            <ul class="nav-upper-list my-flexx">
+    <nav id="nav__bar" class="hidden my-flexx">
+        <div class="nav-upper my-flexx">
+            <div class="brand">
+                <a href="index.html" class="lower__list1"> BuyExpress </a>
+            </div>
+            <ul class="nav-upper-list">
                 <li class="upper__list"><a href="index.html"> Home </a></li>
                 <li class="upper__list"><a href="register.html"> Register </a></li>
                 <li class="upper__list"><a href="login.html"> Login </a></li>
                 <li class="upper__list"><a href="index.html"> Logout </a></li>
                 <li class="upper__list"><a href="contact.html"> Contact </a></li>
-                <li>
-                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
-                </li>
             </ul>
+            <div class="cart-and-profile my-flexx">
+                <span class="cart-total">
+                    <a href="cart.html" class="lower__list2 cart-profile-gap my-flexx"> 
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="spent">$1091</span>
+                    </a>
+                </span>
+                <div class="nav-upper-profile">
+                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
+                </div>
+            </div>
         </div>
-
         <div class="nav-lower my-flexx">
             <ul class="nav-lower-list my-flexx">
                 <li><a href="index.html" class="lower__list1"> BuyExpress </a></li>
                 <li >
-                    <span>
-                        <a href="cart.html" class="lower__list2"> 
-                            <span class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart    </span>
-                            <span class="spent"> <i class="fab fa-dollar-sign"></i> Spent : 1091.00 </span>
-                        </a>
-                    </span>
+                    
                 </li>
             </ul>
         </div>
@@ -46,12 +51,66 @@
     <script src="./index.js"></script>
     <!-- script for javascript ends  -->
 
-    <main>
-        <h2>I am the Contact page</h2>
+    <main class="contact-main my-flexx-column">              <!-- product-section: same as product.html  -->
+        <section class="contact-section my-flexx">              <!-- product-section: same as product.html  -->
+            <section class="contact-left my-flexx-column">       <!-- product-section: same as product.html  -->
+                <article class="contact-left-details my-flexx-column">
+                    <div class="contact-top my-flexx-column">
+                        <h2 class="contact-title">CONTACT US</h2>
+                        <p class="heretohelp">We are always here to help you out. Reach us anytime.</p>
+                    </div>
+                    
+                    <section class="contact-fill-up">
+                        <div class="contact-fill-div">
+                            <label for="contact-name">
+                                <input class="card-contact contact-name-common input-text-contact contact-box-padding" autofocus id="contact-name" type="text" placeholder = "Enter full name"> 
+                            </label>
+                        </div>
+                        <div class="contact-fill-div">
+                            <label for="contact-email">
+                                <input class="card-contact contact-name-common input-text-contact contact-box-padding" required="required" id="contact-email" type="email" placeholder = "Enter e-mail address"> 
+                            </label>
+                        </div>
+                        <div class="contact-fill-div">
+                            <label for="contact-mobile">
+                                <input class="card-contact contact-name-common input-text-contact contact-box-padding" id="contact-email" type="text" placeholder = "Enter mobile number"> 
+                            </label>
+                        </div>
+                        </div>
+                        <div class="contact-fill-div">
+                            <label for="contact-message">
+                                <textarea class="card-contact contact-box-padding input-text-contact" name="" id="contact-message" cols="52" rows="6" placeholder="Type message"></textarea>
+                            </label>
+                        </div>
+                    </section>
+
+                    <div class="send-button">
+                        <a href="#"><button class="card-contact send-btn btn" type="submit"><h3>Send</h3></button></a>
+                    </div>
+                    
+                    <p class="heretohelp">buyexpress@gmail.com</p>
+                    <p class="heretohelp">Call: +8801812345678</p>
+
+                    <div class="contact-icon my-flexx">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </article>
+            </section>
+            <section class="contact-right my-flexx-column">
+                <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.223818475777!2d90.40906904654544!3d23.79683038126976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7b52f19ea6d%3A0x84fd21beef8ef9ed!2sCrowne%20Plaza%20Dhaka%20Gulshan%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2sbd!4v1709846469365!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="my-flexx map-down">
+                    <span class="locatoin-pin"> <i class="fa-solid fa-location-dot"></i> </span>
+                    <span> Gulshan, Dhaka, Bangladesh </span>
+                </div>
+            </section>
+        </section>
     </main>
 
     <footer class="my-flexx">
-        <div class="my-flexx>
+        <div class="my-flexx">
             <label for="subscribe">Subscribe to Newsletter: </label>
             <input type="email" id="subscribe" class="footer_input" placeholder="Enter E-mail">
             <button class="btn btn-subscribe">SUBSCRIBE</button>

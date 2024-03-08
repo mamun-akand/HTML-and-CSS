@@ -13,37 +13,42 @@
 
     <i class="fa-solid fa-bars" id="menu__bar"></i>
 
-    <nav id="nav__bar" class="hidden">
-        <div class="nav-upper">
-            <ul class="nav-upper-list my-flexx">
+    <nav id="nav__bar" class="hidden my-flexx">
+        <div class="nav-upper my-flexx">
+            <div class="brand">
+                <a href="index.html" class="lower__list1"> BuyExpress </a>
+            </div>
+            <ul class="nav-upper-list">
                 <li class="upper__list"><a href="index.html"> Home </a></li>
                 <li class="upper__list"><a href="register.html"> Register </a></li>
                 <li class="upper__list"><a href="login.html"> Login </a></li>
                 <li class="upper__list"><a href="index.html"> Logout </a></li>
                 <li class="upper__list"><a href="contact.html"> Contact </a></li>
-                <li>
-                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
-                </li>
             </ul>
+            <div class="cart-and-profile my-flexx">
+                <span class="cart-total">
+                    <a href="cart.html" class="lower__list2 cart-profile-gap my-flexx"> 
+                        <span class="cart"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="spent">$1091</span>
+                    </a>
+                </span>
+                <div class="nav-upper-profile">
+                    <a href="profile.html"> <img src="./resources/Profile.jpg" alt="image" class="myprofile"> </a>
+                </div>
+            </div>
         </div>
-
         <div class="nav-lower my-flexx">
             <ul class="nav-lower-list my-flexx">
                 <li><a href="index.html" class="lower__list1"> BuyExpress </a></li>
                 <li >
-                    <span>
-                        <a href="cart.html" class="lower__list2"> 
-                            <span class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart    </span>
-                            <span class="spent"> <i class="fab fa-dollar-sign"></i> Spent : 1091.00 </span>
-                        </a>
-                    </span>
+                    
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- script for javascript  starts-->
-    <script src="./index.js"></script>
+    <!-- <script src="./index.js"></script> -->
     <!-- script for javascript ends  -->
 
     <div class="my-flexx head">
@@ -53,7 +58,7 @@
                 <div class="features my-flexx">
                     <article class="article-item my-flexx" >
                         <i class="fas fa-shipping-fast feature-icon"></i>
-                        <h3 class="txt">shipping within 3 days</h3>
+                        <h3 class="txt">Shipping within 3 Days</h3>
                     </article>
                     <article class="article-item my-flexx">
                         <i class="fa-solid fa-phone feature-icon"></i>
@@ -68,7 +73,7 @@
         </div>
     </div>
     
-    <main class="my-flexx">
+    <main class="index-main-section my-flexx">
         <div class="side-bar my-flexx">
             <section class="side-sections">
                 <h3 class="section-title">Categories</h3>
@@ -127,7 +132,7 @@
                 </ul>
             </section>
             <section class="side-sections">
-                <h3 class="section-title">Price Range</h3>
+                <h3 class="section-title">DeliveryCost</h3>
                 <ul class="listed-items">
                     <li>
                         <label for="Free">
@@ -142,8 +147,8 @@
                 </ul>
             </section>
         </div>
+        
         <div class="content-side">
-            
             <!-- acttion part starts -->
             <section class="action-part my-flexx">
                 <div class="sort">
@@ -159,7 +164,6 @@
                 <div class="search">
                     <label for="searchoption">Search: </label>
                     <input class="searchinput" type="search" id="searchoption" placeholder="Type to search">
-                    <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </section>
             <!-- acttion part ends -->
