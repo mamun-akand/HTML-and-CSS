@@ -214,7 +214,7 @@ nav{
    width : 2800px;
 }
 .lower__list1 {
-    font-size: 30px;
+    font-size: 50px;
     /* color: rgb(137, 135, 135); */
     color: var(--color4);
 }
@@ -288,12 +288,40 @@ nav{
     }
 }
 
-main{
+.index-main{
     width: 100%;
     min-height: 90vh;
     padding: 4rem 0;
-    height: auto;
     padding-bottom: 20vh;
+}
+.register-main{
+    width: 100%;
+    min-height: 88vh;
+    padding: 4rem 0;
+    padding-bottom: 20vh;
+      /* background-color: #a0a2a3; */
+      width: 100%;
+      height: auto;
+      margin-top: -4vh;
+      margin-bottom: 6vh;
+      padding: 10vh;
+}
+.login-main{
+    width: 100%;
+    min-height: 90vh;
+    padding: 4rem 0;
+    padding-bottom: 20vh;
+}
+.contact-main{
+    width: 100%;
+    min-height: 72vh;
+    padding: 4rem 0;
+    padding-bottom: 12vh;
+    /* background-color: #f44720; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
 }
 .index-main-section{
     gap: -30vh;
@@ -322,41 +350,33 @@ main{
     /* background-color: #a0a2a3; */
     width: 100%;
     height: auto;
-    margin-top: 9vh;
+    margin-top: 5vh;
     margin-bottom: 1vh;
     padding: 10vh;
 }
-.register-main{
+.product-main-desc{
     /* background-color: #a0a2a3; */
     width: 100%;
     height: auto;
-    margin-top: 9vh;
-    margin-bottom: 1vh;
+    margin-top: 5vh;
+    margin-bottom: 14.9vh;
     padding: 10vh;
 }
-.contact-main{
-    /* background-color: #f44720; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12vh;
-}
+
 .profile-main{
     /* background-color: #a0a2a3; */
     width: 100%;
     height: auto;
     margin-top: 9vh;
-    margin-bottom: 1vh;
+    margin-bottom: 10vh;
     padding: 10vh;
 }
 .log-main{
     /* background-color: #a0a2a3; */
     width: 100%;
-    height: auto;
-    margin-top: 4vh;
-    margin-bottom: 5vh;
-    padding: 10vh;
+    /* height: 100vh; */
+    /* margin-top: 4vh; */
+    /* padding: 10vh; */
 }
 .product-section{
     /* background-color: antiquewhite; */
@@ -632,10 +652,9 @@ main{
 
 /* profile starts here */
 .user-profile{
-    margin-top: -20vh;
     width: 40vh;
     height: auto;
-    gap: 3vh;
+    /* gap: 3vh; */
 }
 
 .profile-card{
@@ -904,6 +923,17 @@ footer{
     /* position: fixed; */
     padding: 10px;
 }
+.footer-login{
+    height: 10vh;
+    bottom: 0;
+
+    font-size: 16px;
+    color:white;
+    background-color: var(--color1);
+    width: 100%;
+    /* position: fixed; */
+    padding: 10px;
+}
 #subscribe{
     border: none;
     padding: 3px;
@@ -917,7 +947,10 @@ footer{
 
 /* responsiveness starts */
 @media screen and (max-width: 992px) {
-
+    body{
+        /* background-color: rgb(238, 255, 0); */
+    }
+    
     .nav-upper{
         flex-direction: column;
         gap: 5px;
@@ -986,6 +1019,9 @@ footer{
     }
 }
 @media screen and (max-width: 768px) {
+    body{
+        /* background-color: rgb(0, 179, 255); */
+    }
 
     .index-main-section{
         padding-right: 5vh;
@@ -1044,6 +1080,23 @@ footer{
         /* background-color: red; */
         margin-right: 0;
     }
+    .login-body{
+        margin-bottom: -50px;
+    }
+    .footer-login{
+        height: 10vh;
+        bottom: 0;
+    
+        font-size: 16px;
+        color:white;
+        background-color: var(--color1);
+        width: 100%;
+        /* position: fixed; */
+        padding: 10px;
+    }
+    .lower__list1{
+        font-size: 38px;
+    }
     .article-item{
         width: 20vh;
         Height: 13vh;
@@ -1058,6 +1111,7 @@ footer{
     }
     .profile-main{
         margin-top: 5vh;
+        margin-bottom: 12vh;
     }
     .product-main{
         margin-top: 0vh;
@@ -1071,11 +1125,7 @@ footer{
         width: 144px;
     }
 
-    main{
-        flex-direction: column;
-        padding: 18px;
-        margin-bottom: 12vh;
-    }
+
     .side-bar{
         /* background-color: #C5C6C7; */
         flex-direction: column;
