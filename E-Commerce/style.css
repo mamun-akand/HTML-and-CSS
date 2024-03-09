@@ -303,7 +303,7 @@ nav{
     width: 100%;
     height: auto;
     margin-top: -3vh;
-    margin-bottom: 1vh;
+    margin-bottom: 0vh;
     padding: 10vh;
 }
 .login-main{
@@ -367,8 +367,8 @@ nav{
     /* background-color: #a0a2a3; */
     width: 100%;
     height: auto;
-    margin-top: 7vh;
-    margin-bottom: 8vh;
+    margin-top: 9vh;
+    margin-bottom: 7vh;
     padding: 10vh;
 }
 .log-main{
