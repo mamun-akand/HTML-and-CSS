@@ -296,15 +296,15 @@ nav{
 }
 .register-main{
     width: 100%;
-    min-height: 88vh;
+    min-height: 82vh;
     padding: 4rem 0;
     padding-bottom: 20vh;
-      /* background-color: #a0a2a3; */
-      width: 100%;
-      height: auto;
-      margin-top: -4vh;
-      margin-bottom: 6vh;
-      padding: 10vh;
+    /* background-color: #a0a2a3; */
+    width: 100%;
+    height: auto;
+    margin-top: -2vh;
+    margin-bottom: 6vh;
+    padding: 10vh;
 }
 .login-main{
     width: 100%;
