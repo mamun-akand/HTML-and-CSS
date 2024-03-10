@@ -934,14 +934,25 @@ footer{
     /* position: fixed; */
     padding: 10px;
 }
+.Newsletter-and-Subscribe{
+    gap: 7px;
+}
 #subscribe{
     border: none;
-    padding: 3px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
     width: 200px;
 }
+.btn-subscribe{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    color:#5f5f60;
+}
 .btn-subscribe:hover{
-    background-color: var(--color5);
-    color: white;
+    background-color: orange;
+    color: black;
 }
 /* footer ends  */
 
